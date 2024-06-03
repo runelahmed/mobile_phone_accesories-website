@@ -161,15 +161,6 @@ body {
     background-color: #EDEFEF;
     padding: 50px 0px;
 }
-#promo-section .promo-section-wrapper .promo-title{
-    font-weight: 500;
-    margin: 0;
-    color: inherit;
-    font-size: 48px;
-    line-height: 52px;
-    text-align: center;
-    padding-bottom: 20px;
-}
 #promo-section .promo-section-wrapper .promo-container{
     display: flex;
     align-items: center;
@@ -200,9 +191,80 @@ body {
     padding-right: 10px;
 }
 
+/* offer-section */
+#offer-section{
+display: flex;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+}
+
+#offer-section .offer-leftside .offer-lefside-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+}
+#offer-section .offer-leftside .offer-lefside-wrapper img{
+    width: 145px;
+    height: 180px;
+    margin: 0px 50px;
+}
+
+#offer-section .offer-leftside h3 {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 20px;
+}
+#offer-section .offer-leftside h2 {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 25px;
+}
 
 
+/* ----------- */
+.iPad-wrapper{
+display: flex;
+margin-top: 50px;
+}
+.iPad-wrapper .iPad-wrapper-box{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+.iPad-wrapper img{
+    padding: 10px;
+}
+.iPad-wrapper p{
+    padding: 30px 0;
+}
 
+/* ------------------ */
+.new-collection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 50px;
+ 
+}
+
+.new-collection .new-collection-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+}
+.new-collection .new-collection-wrapper img {
+   width: 250px;
+}
+.new-collection .new-collection-wrapper p {
+   margin-bottom: 30px;
+}
 /* Utility Classes */
 .bg-primary {
     background-color: var(--bg-primary);
@@ -222,6 +284,29 @@ li {
     list-style-type: none;
 }
 
+.text-l{
+    font-weight: 500;
+    margin: 0;
+    color: inherit;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.text-m{
+    font-weight: 600;
+    margin: 0;
+    color: inherit;
+    font-size: 28px;
+    line-height: 40px;
+    text-align: center;
+    padding-bottom: 30px;  
+}
+.line-through {
+    line-height: 1; 
+    text-decoration: line-through; 
+    font-size:36px;
+}
 .text-s {
     font-size: 12px;
     color: #000;
@@ -234,5 +319,13 @@ li {
     color: black !important;
     font-size: 16px;
     padding: 8px 15px;
-    font-weight: 500;
+    font-weight: 400;
+}
+.btn-secondary{
+    background-color: #0071e3 !important;
+    border-radius: 15px !important;
+    color: #fff !important;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 400;
 }
