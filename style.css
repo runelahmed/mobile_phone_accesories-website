@@ -1,0 +1,238 @@
+:root {
+    --bg-primary: #f3f3f3;
+    --bg-secondary: #474747;
+    --color-primary: rgba(255, 255, 255, 0.85);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    background-color: #fff;
+}
+
+/* Frame Header Section */
+#frame-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#frame-header .frame-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+}
+
+#frame-header .userhub {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#frame-header .userhub:hover {
+    opacity: 1;
+}
+
+#frame-header .userhub .user a i {
+    padding: 0 5px;
+}
+
+/* Nav Bar Section */
+#frame-nav {
+    background-color: var(--bg-secondary);
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#frame-nav .frame-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frame-nav .frame-nav-wrapper .logo {
+    padding: 30px 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#frame-nav .frame-nav-wrapper a img {
+    width: 150px;
+    max-width: 100%;
+    height: auto;
+}
+
+#frame-nav .frame-nav-wrapper .nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#frame-nav .frame-nav-wrapper .nav ul li {
+    padding: 0 15px;
+}
+
+#frame-nav .frame-nav-wrapper .nav ul li a {
+    display: flex;
+    align-items: center;
+    color: var(--color-primary);
+    transition: color 0.3s, opacity 0.3s;
+}
+
+#frame-nav .frame-nav-wrapper .nav ul li a:hover {
+    color: var(--color-primary);
+    opacity: 0.7;
+}
+
+#frame-nav .frame-nav-wrapper .side-menu {
+    display: flex;
+}
+
+#frame-nav .frame-nav-wrapper .side-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#frame-nav .frame-nav-wrapper .side-menu ul .search i,
+#frame-nav .frame-nav-wrapper .side-menu ul .shopping-cart i {
+    padding: 0 15px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    transition: color 0.3s, opacity 0.3s;
+}
+
+#frame-nav .frame-nav-wrapper .side-menu ul .search i:hover,
+#frame-nav .frame-nav-wrapper .side-menu ul .shopping-cart i:hover {
+    color: var(--color-primary);
+    opacity: 0.5;
+}
+
+/* Sub-header Section */
+#sub-header {
+    background-color: var(--bg-primary);
+    padding: 10px 0;
+}
+
+#sub-header .sub-header-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub-header .sub-header-menu ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#sub-header .sub-header-menu ul li {
+    padding: 0 15px;
+}
+
+#sub-header .sub-header-menu ul li a {
+    color: #7a7a7a;
+    font-size: 12px;
+    transition: color 0.3s;
+}
+
+#sub-header .sub-header-menu ul li a:hover {
+    color: #474747;
+}
+
+/* Promotion-section */
+#promo-section .promo-section-wrapper{
+    border-radius: 10px;
+    background-color: #EDEFEF;
+    padding: 50px 0px;
+}
+#promo-section .promo-section-wrapper .promo-title{
+    font-weight: 500;
+    margin: 0;
+    color: inherit;
+    font-size: 48px;
+    line-height: 52px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+#promo-section .promo-section-wrapper .promo-container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+  
+
+}
+#promo-section .promo-section-wrapper .promo-container .promo-leftside{
+    width: 70%;
+    padding: 10px;
+}
+
+#promo-section .promo-section-wrapper .promo-container .promo-rightside h3{
+    font-size: 36px;
+    font-weight: 400;
+
+}
+
+#promo-section .promo-section-wrapper .promo-container .promo-rightside p{
+    font-size: 26px;
+    font-weight: 600;
+}
+
+#promo-section .promo-section-wrapper .promo-container .promo-rightside p .interest{
+    color: #52B5AA;
+    font-size: 68px;
+    font-weight: 600;
+    padding-right: 10px;
+}
+
+
+
+
+/* Utility Classes */
+.bg-primary {
+    background-color: var(--bg-primary);
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.text-s {
+    font-size: 12px;
+    color: #000;
+}
+
+.btn-primary{
+    background-color: #ffffff !important;
+    border: 2px solid black !important;
+    border-radius: 18px !important;
+    color: black !important;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: 500;
+}
