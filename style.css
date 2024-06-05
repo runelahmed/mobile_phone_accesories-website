@@ -41,7 +41,7 @@ body {
 }
 
 #frame-header .userhub .user a i {
-    padding: 0 5px;
+    padding: 0 10px;
 }
 
 /* Nav Bar Section */
@@ -110,7 +110,7 @@ body {
 #frame-nav .frame-nav-wrapper .side-menu ul .shopping-cart i {
     padding: 0 15px;
     font-size: 20px;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.7);
     cursor: pointer;
     transition: color 0.3s, opacity 0.3s;
 }
@@ -139,6 +139,7 @@ body {
     align-items: center;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 50px;
 }
 
 #sub-header .sub-header-menu ul li {
@@ -265,6 +266,76 @@ flex-direction: column;
 .new-collection .new-collection-wrapper p {
    margin-bottom: 30px;
 }
+
+/* footer section */
+#footer-section{
+    margin-top: 20px;
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding: 30px 0;
+    border-bottom: 1px solid #d0cece;
+ }
+
+.footer-wrapper .footer-left{
+    width: 20%;
+}
+.footer-wrapper .footer-left .social-media-icon{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0;
+
+}
+
+.footer-wrapper .footer-left .social-media-icon a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: #000;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.footer-wrapper .footer-left .social-media-icon a i:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.footer-wrapper .footer-left img{
+    width: 70%;
+
+}
+
+.footer-wrapper .footer-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 60%;
+}
+.footer-wrapper .footer-right .footer-title > h4{
+    padding-bottom: 8px;
+}
+.footer-wrapper .footer-right .footer-title ul li{
+   line-height: 20px;
+   list-style-type: none;
+}
+
+/* address and telephoen section */
+
+#footer-section .address-telephone{
+    display: flex;
+    padding: 20px 0px;
+}
+
+#footer-section .address-telephone p{
+    color: #7a7a7a;
+}
+
+#footer-section .address-telephone .address{
+    margin-right: 30px;
+}
 /* Utility Classes */
 .bg-primary {
     background-color: var(--bg-primary);
@@ -329,3 +400,4 @@ li {
     padding: 8px 15px;
     font-weight: 400;
 }
+
