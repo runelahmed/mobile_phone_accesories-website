@@ -44,10 +44,28 @@ body {
     padding: 0 10px;
 }
 
-/* Nav Bar Section */
+/* Modal */
+#frame-header .modal-container {
+    display: none;
+    background-color: #fff;
+    width: 200px;
+    top: 39px;
+    right: 92px;
+    position: absolute;
+}
+
+#frame-header .show-modal {
+    display: block;
+}
+
+#frame-header .modal-container .modal ul li {
+    padding: 12.9px 20px;
+    border-bottom: 1px solid #f3f3f3;
+}
+
+/* Navigation Bar Section */
 #frame-nav {
     background-color: var(--bg-secondary);
-    /* position: fixed; */
     left: 0;
     right: 0;
     z-index: 1000;
@@ -156,60 +174,60 @@ body {
     color: #474747;
 }
 
-/* Promotion-section */
-#promo-section .promo-section-wrapper{
+/* Promotion Section */
+#promo-section .promo-section-wrapper {
     border-radius: 10px;
     background-color: #EDEFEF;
-    padding: 50px 0px;
+    padding: 50px 0;
 }
-#promo-section .promo-section-wrapper .promo-container{
+
+#promo-section .promo-section-wrapper .promo-container {
     display: flex;
     align-items: center;
     flex-direction: row;
-  
-
 }
-#promo-section .promo-section-wrapper .promo-container .promo-leftside{
+
+#promo-section .promo-section-wrapper .promo-container .promo-leftside {
     width: 70%;
     padding: 10px;
 }
 
-#promo-section .promo-section-wrapper .promo-container .promo-rightside h3{
+#promo-section .promo-section-wrapper .promo-container .promo-rightside h3 {
     font-size: 36px;
     font-weight: 400;
-
 }
 
-#promo-section .promo-section-wrapper .promo-container .promo-rightside p{
+#promo-section .promo-section-wrapper .promo-container .promo-rightside p {
     font-size: 26px;
     font-weight: 600;
 }
 
-#promo-section .promo-section-wrapper .promo-container .promo-rightside p .interest{
+#promo-section .promo-section-wrapper .promo-container .promo-rightside p .interest {
     color: #52B5AA;
     font-size: 68px;
     font-weight: 600;
     padding-right: 10px;
 }
 
-/* offer-section */
-#offer-section{
-display: flex;
-justify-content: space-between;
-align-items: center;
-text-align: center;
+/* Offer Section */
+#offer-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
 }
 
-#offer-section .offer-leftside .offer-lefside-wrapper{
+#offer-section .offer-leftside .offer-lefside-wrapper {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
 }
-#offer-section .offer-leftside .offer-lefside-wrapper img{
+
+#offer-section .offer-leftside .offer-lefside-wrapper img {
     width: 145px;
     height: 180px;
-    margin: 0px 50px;
+    margin: 0 50px;
 }
 
 #offer-section .offer-leftside h3 {
@@ -218,39 +236,41 @@ text-align: center;
     line-height: 30px;
     margin-top: 20px;
 }
+
 #offer-section .offer-leftside h2 {
     font-size: 24px;
     font-weight: 600;
     padding-bottom: 25px;
 }
 
+/* iPad Wrapper */
+.iPad-wrapper {
+    display: flex;
+    margin-top: 50px;
+}
 
-/* ----------- */
-.iPad-wrapper{
-display: flex;
-margin-top: 50px;
+.iPad-wrapper .iPad-wrapper-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
-.iPad-wrapper .iPad-wrapper-box{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-direction: column;
-}
-.iPad-wrapper img{
+
+.iPad-wrapper img {
     padding: 10px;
 }
-.iPad-wrapper p{
+
+.iPad-wrapper p {
     padding: 30px 0;
 }
 
-/* ------------------ */
-.new-collection{
+/* New Collection */
+.new-collection {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-direction: row;
     margin-top: 50px;
- 
 }
 
 .new-collection .new-collection-wrapper {
@@ -260,35 +280,38 @@ flex-direction: column;
     text-align: center;
     width: 50%;
 }
+
 .new-collection .new-collection-wrapper img {
-   width: 250px;
-}
-.new-collection .new-collection-wrapper p {
-   margin-bottom: 30px;
+    width: 250px;
 }
 
-/* footer section */
-#footer-section{
+.new-collection .new-collection-wrapper p {
+    margin-bottom: 30px;
+}
+
+/* Footer Section */
+#footer-section {
     margin-top: 20px;
 }
-.footer-wrapper{
+
+.footer-wrapper {
     display: flex;
     flex-direction: row;
     padding: 30px 0;
     border-bottom: 1px solid #d0cece;
- }
+}
 
-.footer-wrapper .footer-left{
+.footer-wrapper .footer-left {
     width: 20%;
 }
-.footer-wrapper .footer-left .social-media-icon{
+
+.footer-wrapper .footer-left .social-media-icon {
     display: flex;
     flex-direction: row;
     padding: 20px 0;
-
 }
 
-.footer-wrapper .footer-left .social-media-icon a i{
+.footer-wrapper .footer-left .social-media-icon a i {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -300,42 +323,137 @@ flex-direction: column;
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-.footer-wrapper .footer-left .social-media-icon a i:hover{
+.footer-wrapper .footer-left .social-media-icon a i:hover {
     background-color: rgba(0, 0, 0, 0.3);
 }
-.footer-wrapper .footer-left img{
-    width: 70%;
 
+.footer-wrapper .footer-left img {
+    width: 70%;
 }
 
-.footer-wrapper .footer-right{
+.footer-wrapper .footer-right {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 60%;
 }
-.footer-wrapper .footer-right .footer-title > h4{
+
+.footer-wrapper .footer-right .footer-title > h4 {
     padding-bottom: 8px;
 }
-.footer-wrapper .footer-right .footer-title ul li{
-   line-height: 20px;
-   list-style-type: none;
+
+.footer-wrapper .footer-right .footer-title ul li {
+    line-height: 20px;
+    list-style-type: none;
 }
 
-/* address and telephoen section */
-
-#footer-section .address-telephone{
+/* Address and Telephone Section */
+#footer-section .address-telephone {
     display: flex;
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
-#footer-section .address-telephone p{
+#footer-section .address-telephone p {
     color: #7a7a7a;
 }
 
-#footer-section .address-telephone .address{
+#footer-section .address-telephone .address {
     margin-right: 30px;
 }
+
+/* Enter Section */
+#enter {
+    padding: 50px 0 30px 0;
+}
+
+#enter h1 {
+    font-size: 40px;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+#enter .home-page-link {
+    color: #7a7a7
+}
+
+/* Form Section */
+#form-section {
+    margin: 30px 0;
+}
+
+#form-section .container .form-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#form-section .container .reset-password-wrapper {
+    width: 100%;
+    padding: 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+#form-section .container .form-container .form-side {
+    width: 49%;
+    padding: 25px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+}
+
+#form-section .container .form-container .form-side #form .button-container,
+#form-section .container .reset-password-wrapper .form-side #form .button-container {
+    display: flex;
+}
+
+#form-section .container .form-container .form-side #form .button-container button,
+#form-section .container .reset-password-wrapper .form-side #form .button-container button {
+    margin-left: 10px;
+}
+
+#form-section .container .form-container .form-side #form label,
+#form-section .container .reset-password-wrapper .form-side #form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+#form-section .container .form-container .form-side #form label>span {
+    color: #ed0000;
+}
+
+#form-section .container .form-container .form-side #form input,
+#form-section .container .reset-password-wrapper .form-side #form input {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--bg-primary);
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+#form-section .container .form-container .form-side #form input:focus,
+#form-section .container .reset-password-wrapper .form-side #form input:focus {
+    box-shadow: inset 0 0 0 1px #dbdbdb;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#form-section .container .form-container .form-side .form-title,
+.new-customer-side .form-title,
+#form-section .container .reset-password-wrapper .form-side .form-title {
+    font-size: 30px;
+    padding-bottom: 20px;
+    font-weight: 500;
+}
+
+#form-section .container .form-container .new-customer-side {
+    width: 49%;
+    padding: 25px;
+    border-radius: 5px;
+}
+
 /* Utility Classes */
 .bg-primary {
     background-color: var(--bg-primary);
@@ -355,7 +473,7 @@ li {
     list-style-type: none;
 }
 
-.text-l{
+.text-l {
     font-weight: 500;
     margin: 0;
     color: inherit;
@@ -364,26 +482,29 @@ li {
     text-align: center;
     padding-bottom: 30px;
 }
-.text-m{
+
+.text-m {
     font-weight: 600;
     margin: 0;
     color: inherit;
     font-size: 28px;
     line-height: 40px;
     text-align: center;
-    padding-bottom: 30px;  
+    padding-bottom: 30px;
 }
+
 .line-through {
-    line-height: 1; 
-    text-decoration: line-through; 
-    font-size:36px;
+    line-height: 1;
+    text-decoration: line-through;
+    font-size: 36px;
 }
+
 .text-s {
     font-size: 12px;
     color: #000;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #ffffff !important;
     border: 2px solid black !important;
     border-radius: 18px !important;
@@ -392,12 +513,41 @@ li {
     padding: 8px 15px;
     font-weight: 400;
 }
-.btn-secondary{
-    background-color: #0071e3 !important;
-    border-radius: 15px !important;
-    color: #fff !important;
-    font-size: 16px;
-    padding: 8px 15px;
-    font-weight: 400;
+
+.btn {
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    height: 40px;
+    background-color: #fff;
+    box-shadow: inset 0 0 0 1px #0071e3;
+    color: #0071e3;
+    white-space: nowrap;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
 }
 
+.btn:hover {
+    text-decoration: underline;
+}
+
+.btn-secondary {
+    display: block;
+    padding: 0 30px;
+    line-height: 40px;
+    height: 40px;
+    color: #fff !important;
+    background-color: #0071e3;
+    box-shadow: inset 0 0 0 1px #0071e3;
+    white-space: nowrap;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: center;
+    outline: none;
+}
